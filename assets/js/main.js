@@ -65,3 +65,5 @@ document.onkeydown = function(e) {
      return false;
     }      
  }
+ // disable right click 
+ document.addEventListener('contextmenu', event => event.preventDefault());
