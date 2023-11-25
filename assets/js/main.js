@@ -46,3 +46,22 @@ gsap.from('.home__bird1',1.2,{opacity:0,x:-80,delay:1.1})
 gsap.from('.home__bird2',1.2,{opacity:0,x: 80,delay:1.2})
 gsap.from('.home__img1',1.2,{opacity:0,y: 200,delay:1.2})
 gsap.from('.home__img4',1.2,{opacity:0,y: 200,delay:1.3})
+// for security 
+document.onkeydown = function(e) {
+    if(e.keyCode == 123) {
+     return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+     return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+     return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+     return false;
+    }
+
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){
+     return false;
+    }      
+ }
